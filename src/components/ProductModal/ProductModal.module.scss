@@ -1,0 +1,131 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%;
+  max-width: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper img {
+  width: 20%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.detailsWrapper {
+  text-align: left;
+}
+
+.priceBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 18px;
+}
+
+.sizeOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sizeButton {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #00a8cc;
+    color: #fff;
+  }
+
+  &.selectedSize {
+    background: #00a8cc;
+    color: #fff;
+    border-color: #007a99;
+    font-weight: bold;
+  }
+}
+
+.addToCartButton {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background: #e63946;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #e63946;
+  }
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.characteristics {
+  margin-top: 20px;
+}
+
+.characteristics ul {
+  list-style: none;
+  padding: 0;
+}
+
+.characteristics ul li {
+  margin-bottom: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

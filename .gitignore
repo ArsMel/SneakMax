@@ -1,0 +1,58 @@
+# Исключить папку node_modules
+node_modules/
+
+# Исключить временные и кэш-файлы
+.vscode/
+.vite/
+.cache/
+.vite-temp/
+*.tmp
+
+# Исключить файлы логов
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Исключить окружение и настройки IDE
+*.env
+*.DS_Store
+Thumbs.db
+.idea/
+
+# Исключить резервные файлы и временные файлы
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+*.lock
+
+# Исключить файлы карты исходного кода
+*.js.map
+*.d.ts.map
+*.css.map
+
+# Исключить автоматически сгенерированные JS, кроме файлов из dist/assets
+!dist/assets/*.js
+
+# Исключить изображения и кэш-изображений, кроме src/images
+images/*.cache
+images/*-optimized.*
+!src/images/*
+
+# Исключить шрифты, кроме необходимых для проекта
+public/fonts/*.ttf
+public/fonts/*.woff
+public/fonts/*.woff2
+
+# Исключить файлы покрытия тестов
+coverage/
+__tests__/
+__mocks__/
+
+# Исключить файлы деплоя
+.deploy/
+
+# Исключить конфликты с git
+*.orig

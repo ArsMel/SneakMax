@@ -1,0 +1,24 @@
+.contacts {
+  padding: 2rem;
+  background-color: #fff;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    gap: 2rem;
+
+    .info {
+      flex: 1;
+    }
+
+    .map {
+      flex: 2;
+      height: 300px;
+      background-color: #eaeaea;
+    }
+  }
+}

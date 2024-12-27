@@ -1,0 +1,16 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": ["react", "react-dom", "react-modal"],
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}

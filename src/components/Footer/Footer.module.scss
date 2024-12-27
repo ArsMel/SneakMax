@@ -1,0 +1,95 @@
+.footer {
+  background-color: #3b2c35;
+  color: #fff;
+  padding: 20px 0;
+
+  .footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .logo {
+      font-size: 24px;
+
+      button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: inherit;
+        cursor: pointer;
+      }
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      width: 25px;
+      height: 18px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      .bar {
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        display: flex;
+      }
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+
+      .navList {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .linkButton {
+          background: none;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .hamburger {
+        display: flex;
+      }
+
+      .nav {
+        display: none;
+
+        &.open {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          background-color: #3b2c35;
+        }
+      }
+    }
+  }
+}
+
+copyright {
+  font-family: 'Comfortaa', serif;
+  font-weight: 400;
+}

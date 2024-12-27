@@ -1,0 +1,70 @@
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .cartList {
+    list-style: none;
+    padding: 0;
+
+    .cartItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .image {
+        width: 160px;
+        height: 160px;
+        margin-right: 10px;
+      }
+
+      .removeButton {
+        margin-left: auto;
+        color: red;
+        cursor: pointer;
+        border: none;
+        background: none;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+
+    .closeButton, .cartButton {
+      background-color: #f56a6a;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        background-color: #e04f4f;
+      }
+    }
+  }
+}
