@@ -3,6 +3,7 @@ import styles from "./ContactForm.module.scss";
 
 const ContactForm = () => {
   const [form, setForm] = useState({ name: "", phone: "" });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -11,6 +12,15 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Submitted:", form);
+
+    // Имитация отправки
+    setIsSubmitted(true);
+    setForm({ name: "", phone: "" });
+
+    // Скрываем уведомление через 3 секунды
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 3000);
   };
 
   return (
@@ -33,6 +43,9 @@ const ContactForm = () => {
         />
         <button type="submit">Отправить</button>
       </form>
+      {isSubmitted && (
+        <p className={styles.successMessage}>Мы с Вами свяжемся в ближайшее время!</p>
+      )}
     </section>
   );
 };
